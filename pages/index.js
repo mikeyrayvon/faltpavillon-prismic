@@ -4,14 +4,15 @@ import Prismic from 'prismic-javascript'
 import { Client } from 'utils/prismicHelpers'
 
 import DefaultLayout from 'layouts'
+import PostList from 'components/PostList'
 
 const Landing = ({ landing, posts }) => {
   return (
     <DefaultLayout>
       <Head>
-        <title>Discipline</title>
+        <title>Faltpavillon</title>
       </Head>
-      <h1>Discipline Sandbox</h1>
+      <PostList posts={posts} />
     </DefaultLayout>
   )
 }

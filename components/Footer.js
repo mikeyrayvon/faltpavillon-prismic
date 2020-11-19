@@ -1,7 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
-      <span>Footer</span>
+    <footer className='py-20'>
     </footer>
   )
 };
