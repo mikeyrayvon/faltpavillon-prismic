@@ -26,6 +26,7 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
   const posts = await Client().query(
     Prismic.Predicates.at('document.type', 'post'), {
       pageSize: 100,
+      orderings: '[my.post.datetime desc]',
       ...(ref ? { ref } : null)
     },
   ).catch(error => {
