@@ -9,6 +9,14 @@
   width: 96%;
 }
 
+.dis-row {
+  @apply flex flex-wrap -mx-20;
+}
+
+.dis-item {
+  @apply w-full md:w-1/2 px-20;
+}
+
 .post-body > * {
   @apply mb-4;
 }

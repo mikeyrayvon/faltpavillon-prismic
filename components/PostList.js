@@ -5,7 +5,7 @@ const PostList = ({ posts }) => {
   if (posts) {
     return (
       <Container>
-        <ul className='flex flex-wrap -mx-8'>
+        <ul className='dis-row'>
           {posts.map(post => <PostItem post={post} key={post.id} />)}
         </ul>
       </Container>
