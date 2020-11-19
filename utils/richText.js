@@ -17,7 +17,7 @@ const htmlSerializer = (type, element, content, children, key) => {
           copyright={element.copyright || ''}
         />
         {element.alt &&
-          <figcaption className='mt-2 text-sm'>{element.alt}</figcaption>
+          <figcaption className='mt-2 text-xs'>{element.alt}</figcaption>
         }
       </figure>
     )
