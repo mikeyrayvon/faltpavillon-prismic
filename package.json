@@ -22,7 +22,6 @@
   "devDependencies": {
     "autoprefixer": "^9",
     "postcss": "^7",
-    "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.1-compat"
   }
 }
