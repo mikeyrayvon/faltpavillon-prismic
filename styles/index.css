@@ -5,6 +5,10 @@
 
 /* purgecss end ignore */
 
+.container {
+  width: 96%;
+}
+
 .post-body > * {
   @apply mb-4;
 }
