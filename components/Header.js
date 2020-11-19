@@ -2,7 +2,7 @@ import Container from './Container'
 
 const Header = () => {
   return (
-    <header className='pt-8 pb-8'>
+    <header className='pt-4 md:pt-8 pb-8'>
       <Container>
         <div className='flex flex-wrap -mx-8'>
           <div className='w-full md:w-1/2 px-8 mb-4'>
