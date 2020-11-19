@@ -15,7 +15,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
           <link rel="icon" href="/favicon.png" type="image/png" />
         </Head>
-        <body className='font-sans'>
+        <body className='font-sans overflow-x-hidden'>
           <Main />
           <NextScript />
           <PrismicScript />
