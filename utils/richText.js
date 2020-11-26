@@ -11,11 +11,11 @@ const htmlSerializer = (type, element, content, children, key) => {
   if (type === 'image') {
     return (
       <figure key={key}>
-        <img
+        <a href={element.url}><img
           src={element.url}
           alt={element.alt || ''}
           copyright={element.copyright || ''}
-        />
+        /></a>
         {element.alt &&
           <figcaption className='mt-2 text-xs'>{element.alt}</figcaption>
         }
