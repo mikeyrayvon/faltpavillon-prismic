@@ -1,5 +1,4 @@
 const PostBody = ({ body }) => {
-  console.log(body)
   return (
     <div>
       {body.map(part => {
