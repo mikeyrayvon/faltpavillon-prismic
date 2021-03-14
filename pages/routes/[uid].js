@@ -9,25 +9,27 @@ import DefaultLayout from 'components/DefaultLayout'
 import Container from 'components/Container'
 
 const Route = ({ preview, doc }) => {
-
-  return (
-    <DefaultLayout>
-      <Head>
-        <title>Faltpavillon{doc.data && doc.data.title && ` | ${doc.data.title}`}</title>
-      </Head>
-      <Container>
-        <div className='dis-row'>
-          <div className='dis-item mb-20 md:mb-32'>
-            {doc.data && doc.data.body && doc.data.body.length > 0 &&
-              <div className='post-body'>
-                <RichTextCustom render={doc.data.body} />
-              </div>
-            }
+  if (doc) {
+    return (
+      <DefaultLayout>
+        <Head>
+          <title>Faltpavillon{doc.data && doc.data.title && ` | ${doc.data.title}`}</title>
+        </Head>
+        <Container>
+          <div className='dis-row'>
+            <div className='dis-item mb-20 md:mb-32'>
+              {doc.data && doc.data.body && doc.data.body.length > 0 &&
+                <div className='post-body'>
+                  <RichTextCustom render={doc.data.body} />
+                </div>
+              }
+            </div>
           </div>
-        </div>
-      </Container>
-    </DefaultLayout>
-  )
+        </Container>
+      </DefaultLayout>
+    )
+  }
+  return null
 };
 
 export async function getStaticProps({ params, preview = null, previewData = {} }) {
