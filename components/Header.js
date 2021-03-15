@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Container from './Container'
 
 const Header = () => {
@@ -6,7 +8,7 @@ const Header = () => {
       <Container>
         <div className='dis-row'>
           <div className='dis-item mb-4'>
-            <h1>Faltpavillon</h1>
+            <h1><Link href='/'><a>Faltpavillon</a></Link></h1>
           </div>
           <div className='dis-item mb-4'>
             <a className='underline' href='mailto:faltpavillon@protonmail.com'>faltpavillon@protonmail.com</a>
