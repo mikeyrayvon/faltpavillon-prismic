@@ -8,6 +8,9 @@ const propsWithUniqueKey = (props, key) => {
 };
 
 const htmlSerializer = (type, element, content, children, key) => {
+  if (type === 'preformatted') {
+    return (<div key={key} dangerouslySetInnerHTML={{__html: element.text}} />)
+  }
   if (type === 'image') {
     return (
       <figure key={key}>
