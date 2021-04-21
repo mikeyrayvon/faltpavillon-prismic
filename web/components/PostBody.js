@@ -1,4 +1,4 @@
-const PostBody = ({ body }) => {
+const PostBody = ({ content }) => {
   return (
     <div>
       {body.map(part => {
@@ -11,6 +11,6 @@ const PostBody = ({ body }) => {
       })}
     </div>
   )
-};
+}
 
-export default PostBody;
+export default PostBody

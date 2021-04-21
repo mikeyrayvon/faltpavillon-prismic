@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "groq": "^2.2.6",
     "gsap": "^3.5.1",
     "moment-timezone": "^0.5.32",
     "next": "10.0.2",

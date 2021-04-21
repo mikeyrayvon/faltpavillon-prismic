@@ -1,18 +1,18 @@
-import RichTextCustom from 'utils/richText'
+import { PortableText } from 'utils/sanity'
 
-const PostItem = ({ post }) => {
-  if (post && post.data) {
-    return (
-      <li className='dis-item mb-20 md:mb-32'>
-        {post.data.body.length > 0 &&
-          <div className='post-body'>
-            <RichTextCustom render={post.data.body} />
-          </div>
-        }
-      </li>
-    )
-  }
-  return null
-};
+const PostItem = ({ doc }) => {
+  if (!doc)
+    return null
 
-export default PostItem;
+  return (
+    <li className='dis-item mb-20 md:mb-32'>
+      {doc.content &&
+        <div className='post-body'>
+          <PortableText blocks={doc.content} />
+        </div>
+      }
+    </li>
+  )
+}
+
+export default PostItem

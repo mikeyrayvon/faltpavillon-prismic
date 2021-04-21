@@ -67,6 +67,14 @@ export const PortableText = createPortableTextComponent({
           <Link href={`/issues/${slug}?action`}><a>{children}</a></Link>
         )
       },
+    },
+    types: {
+      figure: ({node}) => (
+        <figure>
+          <img src={urlFor(node.asset).url()} alt={node.alt} />
+          <figcaption className='mt-2 text-xs'>{node.caption}</figcaption>
+        </figure>
+      )
     }
   }
 })

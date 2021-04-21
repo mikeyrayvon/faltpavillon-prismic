@@ -1,17 +1,17 @@
 import Container from './Container'
 import PostItem from './PostItem'
 
-const PostList = ({ posts }) => {
-  if (posts) {
-    return (
-      <Container>
-        <ul className='dis-row'>
-          {posts.map(post => <PostItem post={post} key={post.id} />)}
-        </ul>
-      </Container>
-    )
-  }
-  return null
-};
+const PostList = ({ docs }) => {
+  if (!docs)
+    return null
 
-export default PostList;
+  return (
+    <Container>
+      <ul className='dis-row'>
+        {docs.map(doc => <PostItem doc={doc} key={doc._id} />)}
+      </ul>
+    </Container>
+  )
+}
+
+export default PostList
