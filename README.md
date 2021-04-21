@@ -1,4 +1,5 @@
-#Faltpavillon
+# Faltpavillon
+
 - Roof dimensions: L 300 x 300 cm, Height: 250 cm, Package size: L 125 x W 19 x H 21 cm, Weight: approx. 12 kg.
 - Choice of colours: White, blue, green, red, grey, champagne.
 - High-quality fabric: breathable, Roof: Waterproof (160 g/m² polyester PU-coated), hydrostatic head 1500 mm according to ISO 811 (DIN EN 20811: 1992), roof seams are sealed / taped.
