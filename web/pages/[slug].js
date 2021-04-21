@@ -6,27 +6,26 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 
 const Page = ({ preview, doc }) => {
-  if (doc) {
-    return (
-      <Layout>
-        <Head>
-          <title>Faltpavillon{doc.data && doc.title && ` | ${doc.title}`}</title>
-        </Head>
+  return (
+    <Layout>
+      <Head>
+        <title>Faltpavillon{doc.data && doc.title && ` | ${doc.title}`}</title>
+      </Head>
+      {doc &&
         <Container>
           <div className='dis-row'>
             <div className='dis-item mb-20 md:mb-32'>
-              {doc && doc.body && 
+              {doc.content &&
                 <div className='post-body'>
-                  <PortableText blocks={doc.body} />
+                  <PortableText blocks={doc.content} />
                 </div>
               }
             </div>
           </div>
         </Container>
-      </Layout>
-    )
-  }
-  return null
+      }
+    </Layout>
+  )
 };
 
 export const getStaticProps = async ({ params, preview = false }) => {
