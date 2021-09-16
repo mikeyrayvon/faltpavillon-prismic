@@ -14,6 +14,7 @@ const Header = () => {
 
     setErrors([])
     setLoading(true)
+    setSuccess(false)
 
     const { first, last, email } = event.target
 
