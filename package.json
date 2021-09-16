@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.65",
     "gsap": "^3.5.1",
     "moment-timezone": "^0.5.32",
     "next": "10.0.2",
@@ -20,6 +21,7 @@
     "swiper": "^6.3.5"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "^2.0.1-compat"
